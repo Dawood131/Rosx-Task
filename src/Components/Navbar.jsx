@@ -77,14 +77,14 @@ export default function Navbar() {
                 </div>
                 {/* Mobile Logo */}
                 <div className="flex justify-center w-full mt-2">
-                  <img src="public/logo-2.png" alt="Logo" className="w-58 h-auto" />
+                  <img src="/logo-2.png" alt="Logo" className="w-58 h-auto" />
                 </div>
               </div>
             )}
 
             {/* Logo */}
             <div className="flex-1 flex justify-center md:justify-start mt-2 md:mt-0 transition-all duration-300">
-              <img src="public/logo-2.png" alt="Logo" className="w-58 md:w-70 h-auto" />
+              <img src="/logo-2.png" alt="Logo" className="w-58 md:w-70 h-auto" />
             </div>
 
             {/* Hamburger */}
