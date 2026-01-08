@@ -34,7 +34,7 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300">
       <div
-        className={`transition-all duration-300 md:py-3 py-2 ${
+        className={`transition-all duration-300 md:py-1 py-2 ${
           scrolled ? "bg-black text-white shadow-md" : "bg-black/60 text-white py-5"
         }`}
       >
@@ -118,11 +118,11 @@ export default function Navbar() {
                     <>
                       <button className="relative flex items-center gap-1">
                         {link.title}
-                        <span className="absolute left-0 -bottom-8 h-[3px] w-0 bg-[#528efd] transition-all duration-300 group-hover:w-full"></span>
-                        <span className="absolute -bottom-7.5 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-r-[6px] border-b-[6px] border-l-transparent border-r-transparent border-b-[#528efd] opacity-0 transition-all duration-300 group-hover:opacity-100"></span>
+                        <span className="absolute left-0 -bottom-6 h-[3px] w-0 bg-[#528efd] transition-all duration-300 group-hover:w-full"></span>
+                        <span className="absolute -bottom-5.5 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-r-[6px] border-b-[6px] border-l-transparent border-r-transparent border-b-[#528efd] opacity-0 transition-all duration-300 group-hover:opacity-100"></span>
                       </button>
 
-                      <ul className="absolute left-0 top-full mt-6.5 w-40 ml-2 bg-black text-white shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                      <ul className="absolute left-0 top-full mt-5.5 w-40 ml-2 bg-black text-white shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                         {link.dropdown.map((d) => (
                           <li key={d.title}>
                             <a href={d.href} className="block px-4 py-2 hover:bg-gray-800">
@@ -135,8 +135,8 @@ export default function Navbar() {
                   ) : (
                     <a href={link.href} className="relative block group px-2 py-2">
                       {link.title}
-                      <span className="absolute left-0 -bottom-6 h-[3px] w-0 bg-[#528efd] transition-all duration-300 group-hover:w-full"></span>
-                      <span className="absolute -bottom-5.5 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-r-[6px] border-b-[6px] border-l-transparent border-r-transparent border-b-[#528efd] opacity-0 transition-all duration-300 group-hover:opacity-100"></span>
+                      <span className="absolute left-0 -bottom-4 h-[3px] w-0 bg-[#528efd] transition-all duration-300 group-hover:w-full"></span>
+                      <span className="absolute -bottom-3.5 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-r-[6px] border-b-[6px] border-l-transparent border-r-transparent border-b-[#528efd] opacity-0 transition-all duration-300 group-hover:opacity-100"></span>
                     </a>
                   )}
                 </li>
